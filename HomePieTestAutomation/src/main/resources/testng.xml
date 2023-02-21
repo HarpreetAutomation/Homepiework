@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+	
+	<listeners>
+		<listener class-name="com.homepie.qa.ExtentReportListner.ExtentReportListener" />
+	</listeners>
+	
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/SHORY/Downloads/Homepie/HomePieTestAutomation/src/test/java/com/homepie/qa/testcases/TS001_CreateListing.java">
+        <classes>
+            <class name="com.homepie.qa.testcases.TS001_CreateListing">
+                <methods>
+                    <include name="TC001_LoginHomePieAutomation"/>
+                    <include name="TC002_NavigateToListingPage"/>
+                    <include name="TC003_FillAddressForListing"/>
+                    <include name="TC004_ConfirmAddressForListing"/>
+                    <include name="TC005_AddDetailsForListing"/>
+                    <include name="TC006_ValidateListingDetails"/>
+                    <include name="TC007_NavigateToMyListingsPage"/>
+                    <include name="TC008_ValidateUserListingsAdded"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

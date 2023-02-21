@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-15T00:31:14 IST" name="Default suite" finished-at="2023-02-15T00:34:16 IST" duration-ms="182451">
+    <groups>
+    </groups>
+    <test started-at="2023-02-15T00:31:14 IST" name="Default test" finished-at="2023-02-15T00:34:16 IST" duration-ms="182451">
+      <class name="com.homepie.qa.testcases.TS001_CreateListing">
+        <test-method signature="TC001_LoginHomePieAutomation()[pri:0, instance:com.homepie.qa.testcases.TS001_CreateListing@7e6f74c]" started-at="2023-02-15T00:31:14 IST" name="TC001_LoginHomePieAutomation" finished-at="2023-02-15T00:31:34 IST" duration-ms="20112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_LoginHomePieAutomation -->
+        <test-method signature="TC002_NavigateToListingPage()[pri:0, instance:com.homepie.qa.testcases.TS001_CreateListing@7e6f74c]" started-at="2023-02-15T00:31:34 IST" name="TC002_NavigateToListingPage" finished-at="2023-02-15T00:31:49 IST" duration-ms="14799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002_NavigateToListingPage -->
+        <test-method signature="TC003_FillAddressForListing()[pri:0, instance:com.homepie.qa.testcases.TS001_CreateListing@7e6f74c]" started-at="2023-02-15T00:31:49 IST" name="TC003_FillAddressForListing" finished-at="2023-02-15T00:31:55 IST" duration-ms="5753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_FillAddressForListing -->
+        <test-method signature="TC004_ConfirmAddressForListing()[pri:0, instance:com.homepie.qa.testcases.TS001_CreateListing@7e6f74c]" started-at="2023-02-15T00:31:55 IST" name="TC004_ConfirmAddressForListing" finished-at="2023-02-15T00:32:05 IST" duration-ms="10328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_ConfirmAddressForListing -->
+        <test-method signature="TC005_AddDetailsForListing()[pri:0, instance:com.homepie.qa.testcases.TS001_CreateListing@7e6f74c]" started-at="2023-02-15T00:32:05 IST" name="TC005_AddDetailsForListing" finished-at="2023-02-15T00:33:33 IST" duration-ms="87625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC005_AddDetailsForListing -->
+        <test-method signature="TC006_ValidateListingDetails()[pri:0, instance:com.homepie.qa.testcases.TS001_CreateListing@7e6f74c]" started-at="2023-02-15T00:33:33 IST" name="TC006_ValidateListingDetails" finished-at="2023-02-15T00:33:43 IST" duration-ms="10223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC006_ValidateListingDetails -->
+        <test-method signature="TC007_GoToMyListingsPage()[pri:0, instance:com.homepie.qa.testcases.TS001_CreateListing@7e6f74c]" started-at="2023-02-15T00:33:43 IST" name="TC007_GoToMyListingsPage" finished-at="2023-02-15T00:34:14 IST" duration-ms="31700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC007_GoToMyListingsPage -->
+        <test-method signature="TC008_validateUserListingsAdded()[pri:0, instance:com.homepie.qa.testcases.TS001_CreateListing@7e6f74c]" started-at="2023-02-15T00:34:14 IST" name="TC008_validateUserListingsAdded" finished-at="2023-02-15T00:34:16 IST" duration-ms="1886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC008_validateUserListingsAdded -->
+      </class> <!-- com.homepie.qa.testcases.TS001_CreateListing -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

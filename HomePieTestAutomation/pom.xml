@@ -1,0 +1,153 @@
+ <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>HomePieAutomation</groupId>
+  <artifactId>HomePieTestAutomation</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>HomePieTestAutomation</name>
+  <url>http://maven.apache.org</url>
+
+ <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<selenium-java.version>4.8.0</selenium-java.version>
+		<testng.version>7.7.0</testng.version>
+		<poi.version>5.2.3</poi.version>
+		<webdrivermanager.version>5.1.1</webdrivermanager.version>
+		<poi-ooxml.version>4.1.2</poi-ooxml.version>
+		<openxml4j.version>1.0-beta</openxml4j.version>
+		<mssql-jdbc.version>11.2.2.jre8</mssql-jdbc.version>
+		<extentreports.version>2.41.2</extentreports.version>
+		<ooxml-schemas.version>1.4</ooxml-schemas.version>
+		<mail.version>1.4</mail.version>
+		<java.version>15</java.version>
+		<maven.compiler.source>15</maven.compiler.source>
+		<maven.compiler.target>15</maven.compiler.target>
+	 	<suiteXMLFile>src/main/resources/testng.xml</suiteXMLFile>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium-java.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>${webdrivermanager.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>${poi-ooxml.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>ooxml-schemas</artifactId>
+			<version>${ooxml-schemas.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>openxml4j</artifactId>
+			<version>${openxml4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>${mssql-jdbc.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+		<dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>${extentreports.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>${mail.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
+        <dependency>
+             <groupId>org.apache.xmlbeans</groupId>
+             <artifactId>xmlbeans</artifactId>
+             <version>5.1.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-collections/commons-collections -->
+          <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>3.2.2</version>
+          </dependency>
+          
+          <!-- https://mvnrepository.com/artifact/org.osgl/excel-reader -->
+         <dependency>
+               <groupId>org.osgl</groupId>
+               <artifactId>excel-reader</artifactId>
+               <version>1.1.0</version>
+         </dependency>
+         <dependency>
+  		       <groupId>org.apache.logging.log4j</groupId>
+  			   <artifactId>log4j-to-slf4j</artifactId>
+    		   <version>2.8.2</version>
+		 </dependency>
+
+    </dependencies>
+	 <build>
+		 <plugins>
+			 <plugin>
+				 <groupId>org.apache.maven.plugins</groupId>
+				 <artifactId>maven-compiler-plugin</artifactId>
+				 <version>3.10.1</version>
+
+			 </plugin>
+			 <plugin>
+				 <groupId>org.apache.maven.plugins</groupId>
+				 <artifactId>maven-surefire-plugin</artifactId>
+				 <version>3.0.0-M8</version>
+
+				 <configuration>
+					 <suiteXmlFiles>
+						 <suiteXmlFile>${suiteXMLFile}</suiteXmlFile>
+					 </suiteXmlFiles>
+				 </configuration>
+			 </plugin>
+		 </plugins>
+	 </build>
+</project>
